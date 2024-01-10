@@ -8,6 +8,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var suppliersRouter = require('./routes/suppliers');
 
+/* REFERENCIA AL MÓDULO */
+const swaggerUi = require('swagger-ui-express')
+
+/* REFERENCIA AL ARCHIVO GENERADO */
+const swaggerFile = require('./swagger_output.json')
+
 var app = express();
 
 
@@ -21,6 +27,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
