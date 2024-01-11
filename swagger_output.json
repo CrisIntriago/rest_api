@@ -8,7 +8,7 @@
   "host": "restapi-production-c02d.up.railway.app",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "securityDefinitions": {
     "ApiKeyAuth": {
