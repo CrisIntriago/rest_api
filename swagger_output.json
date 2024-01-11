@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "localhost:3002",
+  "host": "restapi-production-c02d.up.railway.app",
   "basePath": "/",
   "schemes": [
     "http"
