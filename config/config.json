@@ -18,6 +18,7 @@
     "password": "a6aHDDGcCC5C3-Efde3hCafadfaAaEhD",
     "database": "railway",
     "host": "roundhouse.proxy.rlwy.net",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": "31613"
   }
 }
